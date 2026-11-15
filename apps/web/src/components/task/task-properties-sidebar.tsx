@@ -731,15 +731,15 @@ export default function TaskPropertiesSidebar({
                     >
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-1.5 py-0.5 cursor-pointer hover:bg-accent/50 transition-colors text-[10px]"
+                        className="flex max-w-full items-start gap-1 whitespace-normal break-words px-1.5 py-0.5 text-left text-[10px] cursor-pointer hover:bg-accent/50 transition-colors"
                       >
                         <span
-                          className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                          className="mt-0.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
                           style={{
                             backgroundColor: resolveLabelColor(label.color),
                           }}
                         />
-                        <span className="truncate max-w-[60px]">
+                        <span className="min-w-0 whitespace-normal break-words">
                           {label.name}
                         </span>
                       </Badge>
